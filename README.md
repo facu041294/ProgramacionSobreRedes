@@ -12,7 +12,7 @@ El objetivo de este espacio es documentar el progreso práctico en la materia, a
 
 ## Contenido del Repositorio
 
-### 📂 `PFO1-ConcurrenciaConHilos/`
+### 📂 `Actividad-ConcurrenciaConHilos/`
 - **Descripción:** Solución a la primera Práctica Formativa Obligatoria, enfocada en los fundamentos de la programación concurrente utilizando el módulo `threading` de Python.
 - **Archivos Clave:**
   - `ContandoEnParalelo.py`: Implementación de dos hilos que ejecutan una tarea de conteo de forma concurrente.
@@ -22,6 +22,13 @@ El objetivo de este espacio es documentar el progreso práctico en la materia, a
   - El problema del `Global Interpreter Lock (GIL)`.
   - Sincronización de hilos con `join()` y `Condition variables`.
   - Prevención de `race conditions`.
+
+### 📂 `PFO1-Próximamente/`
+- **Descripción:** Próximamente
+- **Archivos Clave:**
+  - Próximamente
+- **Conceptos Aplicados:**
+  - Próximamente
 
 ### 📂 `PFO2-API_REST_con_Flask/`
 - **Descripción:** (Próximamente) Desarrollo de una API RESTful simple utilizando Flask y SQLite, con un cliente de consola para interactuar con ella.
