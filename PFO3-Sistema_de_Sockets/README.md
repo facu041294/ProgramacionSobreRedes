@@ -29,7 +29,7 @@ El sistema se compone de tres componentes principales que se comunican a través
 
 El siguiente diagrama ilustra el flujo de comunicación entre los componentes implementados:
 
-![ArchDiagram](/PFO3-Sistema_de_Sockets/assets/ArchDiagram.png)
+![ArchDiagram](./assets/ArchDiagram.png)
 
 ```mermaid
 graph LR

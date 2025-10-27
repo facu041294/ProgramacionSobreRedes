@@ -73,7 +73,7 @@ En la Terminal 1, ejecuta:
 ```bash
 python -m servidor.app
 ```
-![alt text](assets/server_running.png)
+![alt text](./assets/server_running.png)
 (Comentario: Captura de la terminal del servidor mostrando el mensaje * Running on http://127.0.0.1:5000)
 
 b) Iniciar el Cliente:
@@ -87,7 +87,7 @@ python -m cliente.cliente_consola
 1. Flujo de Registro y Login Exitoso (Happy Path)
 Se probó el registro de un nuevo usuario y su posterior inicio de sesión, culminando en el acceso exitoso al endpoint /tareas.
 
-![alt text](assets/happy_path_test.png)
+![alt text](./assets/happy_path_test.png)
 (Comentario: Captura de la terminal del cliente mostrando el menú, un registro exitoso, un login exitoso y la posterior impresión del HTML de bienvenida.)
 
 2. Pruebas de Casos de Error
@@ -95,17 +95,17 @@ Se validó el manejo de errores comunes para asegurar la robustez del sistema.
 
 a) Intento de Registro de Usuario Duplicado:
 
-![alt text](assets/error_registro_duplicado.png)
+![alt text](./assets/error_registro_duplicado.png)
 (Comentario: Captura de la terminal del cliente mostrando el mensaje de error No se pudo registrar: El nombre de usuario ya existe.)
 
 b) Intento de Login con Credenciales Inválidas:
 
-![alt text](assets/error_login_invalido.png)
+![alt text](./assets/error_login_invalido.png)
 (Comentario: Captura de la terminal del cliente mostrando el mensaje de error Credenciales inválidas.)
 
 c) Intento de Conexión con Servidor Apagado:
 
-![alt text](assets/error_servidor_apagado.png)
+![alt text](./assets/error_servidor_apagado.png)
 (Comentario: Captura de la terminal del cliente mostrando el mensaje de error No se pudo conectar con el servidor. ¿Está corriendo?.)
 
 ---

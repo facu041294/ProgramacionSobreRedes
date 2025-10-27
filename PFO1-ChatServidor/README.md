@@ -61,7 +61,7 @@ python -m servidor.server
 [INFO] Servidor iniciado. Presiona Enter para detener.
 ```
 
-![alt text](assets/ServidorIniciado.png)
+![alt text](./assets/ServidorIniciado.png)
 
 ### 2. Iniciar Clientes y Probar Concurrencia
 
@@ -71,7 +71,7 @@ python -m cliente.client
 ```
 
 Puedes enviar mensajes desde todos los clientes simultáneamente. El servidor los procesará de forma concurrente.
-![alt text](assets/ChatConcurrente.png)
+![alt text](./assets/ChatConcurrente.png)
 
 ### 3. Detener el Servidor
 
@@ -83,7 +83,7 @@ Vuelve a la terminal del servidor y presiona la tecla Enter.
 [INFO] El bucle de aceptación de conexiones ha terminado.
 [*] Servidor detenido correctamente.
 ```
-![alt text](assets/ApagadoServidor.png)
+![alt text](./assets/ApagadoServidor.png)
 
 ---
 ## Proceso de Desarrollo y Refactorización (Lecciones Aprendidas)
@@ -96,16 +96,16 @@ Se realizaron una serie de pruebas sobre la versión inicial del servidor para v
 
 - Caso de Prueba A (Servidor Apagado): Se verificó que el cliente maneja correctamente la ConnectionRefusedError al intentar conectarse a un servidor no disponible.
 
-![alt text](assets/CasoA.png)
+![alt text](./assets/CasoA.png)
 
 - Caso de Prueba B (Cierre Abrupto): Se probó la resiliencia del servidor al cerrar un cliente de forma forzada. El servidor detectó la ConnectionResetError y continuó operando sin crashear.
 
-![alt text](assets/CasoB.png)
+![alt text](./assets/CasoB.png)
 
 - Caso de Prueba C (Puerto Ocupado): Se intentó iniciar una segunda instancia del servidor. Se detectó una anomalía donde SO_REUSEADDR permitía que ambos servidores se iniciaran.
     - Lección: Se aprendió el comportamiento específico de SO_REUSEADDR en ciertos SOs y la necesidad de desactivarlo para este tipo de prueba.
 
-![alt text](assets/CasoC.png)
+![alt text](./assets/CasoC.png)
 
 ### Refactorización del Mecanismo de Cierre
 
@@ -122,15 +122,15 @@ Este proceso de refactorización no solo solucionó un problema técnico, sino q
 
 ### Diagrama de Secuencia
 
-![alt text](assets/DiagramaSecuencia.png)
+![alt text](./assets/DiagramaSecuencia.png)
 
 ### Diagrama de Clases
 
-![alt text](assets/DiagramaClases.png)
+![alt text](./assets/DiagramaClases.png)
 
 ### Diagrama Entidad-Relación
 
-![alt text](assets/DiagramaER.png)
+![alt text](./assets/DiagramaER.png)
 
 ---
 ## Conceptos Clave Implementados
